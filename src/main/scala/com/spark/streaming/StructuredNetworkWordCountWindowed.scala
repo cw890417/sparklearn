@@ -10,7 +10,7 @@ object StructuredNetworkWordCountWindowed {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder()
-      .master("spark://localhost:7077")
+//      .master("spark://localhost:7077")
       .appName("StructuredNetworkWordCountWindowed")
       .getOrCreate()
 

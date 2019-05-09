@@ -9,7 +9,7 @@ object KafkaStreaming {
     val spark = SparkSession
       .builder()
       .appName("KafkaStreaming")
-      .master("local[2]")
+//      .master("local[2]")
       .getOrCreate()
 
     import spark.implicits._
