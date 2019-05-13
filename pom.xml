@@ -14,7 +14,7 @@
         <spark.version>2.4.2</spark.version>
         <scala.version>2.12.8</scala.version>
         <scala.binary.version>2.12</scala.binary.version>
-        <hadoop.version>3.1.0</hadoop.version>
+        <hadoop.version>3.1.2</hadoop.version>
     </properties>
 
 
@@ -53,6 +53,12 @@
             <version>${spark.version}</version>
 <!--            <scope>provided</scope>-->
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.hadoop</groupId>-->
+<!--            <artifactId>hadoop-client</artifactId>-->
+<!--            <version>${hadoop.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.thoughtworks.paranamer</groupId>
