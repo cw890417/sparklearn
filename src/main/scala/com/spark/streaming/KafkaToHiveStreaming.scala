@@ -62,9 +62,8 @@ object KafkaToHiveStreaming {
     sql("SELECT * FROM db_hive.hive_records").show()
 
     // Prepare a Parquet data directory
-    // Prepare a Parquet data directory
     val dataDir = "/tmp/parquet_data"
-//    (1 to 10000).toDF("key").write.orc(dataDir)
+    //    (1 to 10000).toDF("key").write.orc(dataDir)
     spark.range(10).toDF("key").write.orc(dataDir)
     // Create a Hive external Parquet table
     sql(
